@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <form name="trial">
+                name<input type="text" id="name"><br>
+                password<input type="password" id="pass"><br>
+                <button onclick="valid()">login</button>
+        </form>
+        <script>
+            function valid()
+            {
+                let a=document.forms['trial']['name'].value;
+                let b=document.forms['trial']['pass'].value;
+                if(a=='' || b=='')
+                {
+                    alert("enter a proper value");
+                }
+                else
+                {
+                    let z="you have entered your name as "+ a +" and you have entered password as "+ b +" please click ok to proceed"
+                    alert(z);
+                }
+            }
+        </script>
+        </body>
+</html>
